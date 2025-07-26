@@ -1,0 +1,13 @@
+vim.o.expandtab = true
+vim.o.tabstop = 4
+vim.o.softtabstop = 4
+vim.o.shiftwidth = 4
+vim.g.mapleader = ","
+vim.opt.termguicolors = true
+vim.diagnostic.config({virtual_text = false})
+vim.o.relativenumber = true
+vim.wo.number = true
+vim.o.linebreak = true
+vim.o.autoindent = true
+vim.o.swapfile = false
+vim.o.linespace = 8
