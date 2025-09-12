@@ -13,5 +13,7 @@ vim.opt.rtp:prepend(lazypath)
 
 require("core.vim-options")
 require("lazy").setup("plugins")
-require("colorizer").setup()
 require("core.keymaps")
+
+vim.cmd("colorscheme gruvbox-material")
+vim.cmd("highlight TabLineFill guibg=NONE")
