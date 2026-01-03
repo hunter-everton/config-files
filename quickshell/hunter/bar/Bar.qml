@@ -16,7 +16,7 @@ Scope {
             property var modelData
             screen: modelData
 
-            color: "#AA000000"
+            color: Colors.clear_dark
 
             implicitHeight: 30
 

@@ -3,9 +3,9 @@ import Quickshell
 import QtQuick
 
 Singleton {
-  readonly property color primary: "#aebac8"
-  readonly property color clear_dark: "#AA000000"
-  readonly property color white: "#d4d7dc"
+  readonly property color primary: "#aaaaaa"
+  readonly property color clear_dark: "#ee000000"
+  readonly property color white: '#ffffff'
 
 
 

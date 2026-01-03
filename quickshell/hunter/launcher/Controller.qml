@@ -40,7 +40,7 @@ Singleton {
 		PanelWindow {
 			width: 450
 			height: 7 + searchContainer.implicitHeight + list.topMargin * 2 + list.delegateHeight * 10
-			color: Colors.clear_dark
+			color: "transparent"
 			WlrLayershell.keyboardFocus: WlrKeyboardFocus.Exclusive
 			WlrLayershell.namespace: "shell:launcher"
 
@@ -262,12 +262,16 @@ Singleton {
 									Layout.alignment: Qt.AlignVCenter
 									asynchronous: true
 									implicitSize: 30
-									source: Quickshell.iconPath(modelData.icon)
+									source: Quickshell.iconPath(modelData.icon, true)
 								}
 								Text {
 									text: modelData.name
 									color: Colors.white
 									Layout.alignment: Qt.AlignVCenter
+
+                                    font.family: TextSettings.mainFont
+                                    font.weight: TextSettings.fontWeight
+                                    font.pointSize: 10
 								}
 							}
 						}

@@ -15,5 +15,5 @@ require("core.vim-options")
 require("lazy").setup("plugins")
 require("core.keymaps")
 
-vim.cmd("colorscheme gruvbox-material")
+vim.cmd("colorscheme github_dark_high_contrast")
 vim.cmd("highlight TabLineFill guibg=NONE")

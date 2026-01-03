@@ -83,6 +83,33 @@ PopupWindow {
                 }
             }
 
+            DayOfWeekRow {
+                id: daysRow
+
+                locale: grid.locale
+
+                Layout.fillWidth: true
+                Layout.fillHeight: true
+
+                Layout.leftMargin: 10
+                Layout.rightMargin: 10
+                Layout.bottomMargin: 0
+                Layout.topMargin: 0
+
+                spacing: 5
+
+                delegate: Text {
+                    horizontalAlignment: Text.AlignHCenter
+                    verticalAlignment: Text.AlignVCenter
+
+                    color: Colors.white
+                    text: model.shortName
+                    font.pointSize: 9
+                    font.family: TextSettings.mainFont
+                    font.weight: TextSettings.fontWeight
+                }
+            }
+
             MonthGrid {
                 id: cal
 

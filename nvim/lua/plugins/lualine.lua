@@ -32,7 +32,7 @@ return {
     config = function()
         require("lualine").setup {
             options = {
-                theme = gruvbox_material,
+                theme = github_dark_high_contrast,
                 component_separators = '',
             },
             sections = {
